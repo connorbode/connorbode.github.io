@@ -1,24 +1,14 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "The Strange Case of Dr. Jekyll & Mr. Hyde"
 date:   2014-03-10 16:25:16
-categories: jekyll update
+categories:
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+I've been meaning to start up a blog for a while.  Now everyone can listen to my pointless rants!
 
-Jekyll also offers powerful support for code snippets:
+The blog is powered by [Jekyll](http://jekyllrb.com/) and hosted on Github.  Feel free to view the [blog's source](http://github.com/connorbode/connorbode.github.io).
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Side note: I went on a Googley mission to discover more about Dr. Jekyll & Mr. Hyde because I only know them from [The League of Extraordinary Gentlemen](http://www.imdb.com/title/tt0311429/).  On my mission, I found [this gem](http://www.youtube.com/watch?v=EugSL1jbUE0).
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+__And so begins my coding blog!  Muahaha.__
