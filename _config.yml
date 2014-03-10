@@ -2,4 +2,5 @@ name: Connor Bode
 markdown: redcarpet
 pygments: true
 
-baseurl: http://connorbode.github.io/_site
+baseurl: "http://connorbode.github.io/_site"
+url: "http://connorbode.github.io/_site"
