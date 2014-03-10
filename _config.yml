@@ -1,0 +1,7 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+
+safe: true
+url: "http://connorbode.github.io/blog"
+baseurl: "http://connorbode.github.io/blog"
