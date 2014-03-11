@@ -121,6 +121,16 @@ a:visited { color: #a0a; }
   border: 0;
 }
 
+.left {
+  float: left;
+  width: 38.2%;
+}
+
+.right {
+  float: right;
+  width: 61.8%;
+}
+
 #gravatar {
   width: 100px;
   height: 100px;
