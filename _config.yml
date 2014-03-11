@@ -4,3 +4,5 @@ pygments: true
 
 baseurl: "http://connorbode.github.io/_site"
 url: "http://connorbode.github.io/_site"
+
+permalink: :title
