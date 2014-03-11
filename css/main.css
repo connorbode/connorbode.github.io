@@ -121,6 +121,24 @@ a:visited { color: #a0a; }
   border: 0;
 }
 
+#gravatar {
+    margin:auto;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-100px;
+    position:absolute;
+ z-index: 10;
+width: 210px;
+ height: 210px;
+ background-image: url('http://www.gravatar.com/avatar/010666ce377b6b197a754b8299ff4f14?s=200');
+ background-color: black;
+ background-position: center;
+ border-radius: 40px;
+ -moz-border-radius: 40px;
+ -webkit-border-radius: 40px;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
