@@ -122,9 +122,9 @@ a:visited { color: #a0a; }
 }
 
 #gravatar {
-  width: 200px;
-  height: 200px;
-  background-image: url('http://www.gravatar.com/avatar/010666ce377b6b197a754b8299ff4f14?s=200');
+  width: 100px;
+  height: 100px;
+  background-image: url('http://www.gravatar.com/avatar/010666ce377b6b197a754b8299ff4f14?s=100');
   background-color: black;
   background-position: center;
   border-radius: 50px;
