@@ -2,7 +2,7 @@
 layout: post
 title:  "The Strange Case of Dr. Jekyll & Mr. Hyde"
 date:   2014-03-10 16:25:16
-categories:
+categories: blog
 ---
 
 I've been meaning to start up a blog for a while.  Now everyone can listen to my pointless rants!

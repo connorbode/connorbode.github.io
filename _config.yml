@@ -1,9 +1,11 @@
-name: Connor Bode
-email_md5: 010666ce377b6b197a754b8299ff4f14
-markdown: redcarpet
+markdown: kramdown
 pygments: true
+permalink: /:title
 
-baseurl: "http://connorbode.github.io/_site"
-url: "http://connorbode.github.io/_site"
+logo: http://www.gravatar.com/avatar/010666ce377b6b197a754b8299ff4f14?s=100
 
-permalink: :title
+url:
+baseurl:
+
+redcarpet:
+  extensions: [strikethrough, tables]
