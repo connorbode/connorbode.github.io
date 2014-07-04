@@ -67,7 +67,7 @@ angular.module("myApp")
 angular.module("myApp")
 
   .controller("MyCtrl", ["$location", function (a) {
-    var b = a.path();  // undefined
+    var b = a.path();  // (= this works
     console.log("This page is located at " + b)
   }]);
 {% endhighlight %}
