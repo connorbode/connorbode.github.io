@@ -33,11 +33,11 @@ sayHi("Dave");
 This can cause problems with [Angular dependency injection](https://docs.angularjs.org/guide/di).  A common way of injecting dependencies is to pass the dependency names as function arguments:
 
 {% highlight javascript %}
-angular.module('myApp')
+angular.module("myApp")
 
-  .controller('MyCtrl', function ($location) {
+  .controller("MyCtrl", function ($location) {
     var path = $location.path();
-    console.log('This page is located at ' + path);
+    console.log("This page is located at " + path);
   });
 {% endhighlight %}
 
