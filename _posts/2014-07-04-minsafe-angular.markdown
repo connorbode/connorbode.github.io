@@ -34,7 +34,6 @@ This can cause problems with [Angular dependency injection](https://docs.angular
 
 {% highlight javascript %}
 angular.module("myApp")
-
   .controller("MyCtrl", function ($location) {
     var path = $location.path();
     console.log("This page is located at " + path);
@@ -45,7 +44,6 @@ angular.module("myApp")
 
 {% highlight javascript %}
 angular.module("myApp")
-
   .controller("MyCtrl", function (a) {
     var b = a.path();  // undefined
     console.log("This page is located at " + b)
@@ -56,7 +54,6 @@ To ensure minification does not break an Angular app, __Inline Array Notation__ 
 
 {% highlight javascript %}
 angular.module("myApp")
-
   .controller("MyCtrl", ["$location", function (locationVar) {
     var path = locationVar.path();
     console.log("This page is located at " + path);
@@ -65,7 +62,6 @@ angular.module("myApp")
 // after variables are renamed:
 
 angular.module("myApp")
-
   .controller("MyCtrl", ["$location", function (a) {
     var b = a.path();  // (= this works
     console.log("This page is located at " + b)
