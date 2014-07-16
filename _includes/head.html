@@ -1,9 +1,18 @@
 <!-- meta information -->
 <meta name="google-site-verification" content="gC1Ybs85HRODLb7qsUwp19FwP8H4WkikdGnBkvgfqWQ" />
 <meta charset="utf-8">
-<meta name="description" {% if page.title == "Home" %}
-      content="{{ site.data.brume.description }}" {% else %}
-      content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" {% endif %}>
+<meta name="description" 
+  {% if page.title == "Home" %} 
+    content="{{ site.data.brume.description }}" 
+  {% elsif page.title == "Blog" %} 
+    content="{{ site.data.brume.description }}" 
+  {% elsif page.title == "Projects" %} 
+    content="{{ site.data.brume.description }}" 
+  {% elsif page.title == "About" %} 
+    content="{{ site.data.brume.description }}" 
+  {% else %}
+    content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" 
+  {% endif %}>
 <meta name="author" content="{{ site.data.brume.author }}">
 
 <!-- Enable responsiveness on mobile devices-->
