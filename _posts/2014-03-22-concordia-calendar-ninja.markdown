@@ -3,6 +3,14 @@ layout: post
 title:  "Concordia Calendar Ninja"
 date:   2014-03-10 16:25:16
 categories: project
+languages: !!seq
+- Ruby
+- Javascript
+- CSS
+technologies: !!seq
+- Sinatra
+- RSpec
+- Angular
 ---
 
 This project was inspired by Concordia University's [Software Engineering and Computer Science Society (SCS)](http://scs.ecaconcordia.ca/).  I was working on the project at an SCS hackathon two years ago ([see the repo](https://github.com/SCS-hackers-group/Schedule-To-Calendar)), but there hasn't been any progress on it since.  I needed an idea for a demo project, so I just stole this one!
