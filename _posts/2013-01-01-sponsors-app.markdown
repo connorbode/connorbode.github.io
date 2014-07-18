@@ -11,6 +11,8 @@ technologies: !!seq
 - Grape
 - RSpec
 - Angular
-client: Canadian Avalanche Association
+client: Canadian Avalanche Centre
 ---
-The Canadian Avalanche Association 
+The [Canadian Avalanche Centre](http://www.avalanche.ca/cac/) publishes public avalanche warnings for various Canadian regions.  These forecasts are published daily, and each day has a sponsor.  The management of sponsors was mega-ugly: the sponsorship coordinator (who had no technical knowledge) would create a spreadsheet mapping sponsorship details to specific days.  A tech employee would manually upload sponsor logos to a server & add a column to the spreadsheet containing URIs for the logos.  The spreadsheet would be converted to CSV and uploaded to a server.  Then, a script would read the CSV and generate sponsorship details for the day.  __Sponsorship details would change frequently throughout the winter & this process would have to be repeated.__
+
+I created a simple 
