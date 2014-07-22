@@ -19,7 +19,7 @@
 
 /*	MAIN CONTAINER 
 	Set the width to whatever you want the width of your site to be. */
-.container { 
+.content-container { 
 	max-width: 800px;
 	margin: 0 auto; 
 }
@@ -27,7 +27,7 @@
 
 
 /*	SELF CLEARING FLOATS - CLEARFIX METHOD */
-.container:after,
+.content-container:after,
 .row:after, 
 .col:after, 
 .clr:after, 
