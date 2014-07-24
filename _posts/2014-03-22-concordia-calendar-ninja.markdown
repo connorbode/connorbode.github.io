@@ -8,6 +8,9 @@ languages: !!seq
 - Javascript
 - CSS
 technologies: !!seq
+- Ruby
+- Javascript
+- CSS
 - Sinatra
 - RSpec
 - Angular
