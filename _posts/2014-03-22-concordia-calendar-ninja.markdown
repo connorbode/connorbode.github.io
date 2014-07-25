@@ -12,8 +12,10 @@ technologies: !!seq
 - Javascript
 - CSS
 - Sinatra
+- Mechanize
+- Nokogiri
 - RSpec
-- Angular
+- AngularJS
 ---
 
 <img src="../public/images/ccn_sketch.jpg" style="height:200px"><img src="../public/images/ccn_v1.png" style="height:200px">
@@ -27,6 +29,10 @@ Most people I know use Google Calendar or Apple iCal for managing their schedule
 ### Solution
 
 The Concordia Calendar Ninja takes a Concordia student's username & password, retrieves the users schedule, authenticates the user to Google & adds their schedule to Google Calendar.  There are also plans to allow export to iCal.
+
+The back-end is written using Ruby with [Sinatra](http://www.sinatrarb.com/) to handle HTTP requests.  [Mechanize](http://docs.seattlerb.org/mechanize/) is used to crawl the MyConcordia portal & [Nokogiri](http://nokogiri.org/) is used to parse the schedule HTML.
+
+The client uses [AngularJS](https://angularjs.org/).  While Angular may be overkill for such a small application, I will never go back to using jQuery alone for front-end development.  I attempted to do the client without Angular and got frustrated at the lack of structure.
 
 __Links:__
 
