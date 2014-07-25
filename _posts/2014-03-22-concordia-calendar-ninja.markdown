@@ -20,7 +20,13 @@ technologies: !!seq
 
 This project was inspired by Concordia University's [Software Engineering and Computer Science Society (SCS)](http://scs.ecaconcordia.ca/).  I was working on the project at an SCS hackathon two years ago ([see the repo](https://github.com/SCS-hackers-group/Schedule-To-Calendar)), but there hasn't been any progress on it since.  I needed an idea for a demo project, so I just stole this one!
 
-The purpose of this project is to log in to a Concordia student's MyConcordia profile, retrieve that student's course schedule for a given semester and import the schedule to a Google Calendar account.  It relieves the user of a tedious task.
+### Problem
+
+Most people I know use Google Calendar or Apple iCal for managing their schedule.  MyConcordia doesn't provide a way to export your class schedule, so for each semester you need to create bunch of recurring events.  In the end it takes maybe 20 minutes max to add all of your events but it is a tedious task.
+
+### Solution
+
+The Concordia Calendar Ninja takes a Concordia student's username & password, retrieves the users schedule, authenticates the user to Google & adds their schedule to Google Calendar.  There are also plans to allow export to iCal.
 
 __Links:__
 
