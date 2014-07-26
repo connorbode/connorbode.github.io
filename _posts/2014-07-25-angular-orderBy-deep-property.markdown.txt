@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "orderBy Deep Object Property"
+date:   2014-07-25 19:52:00
+categories: drafts
+---
+
+I encountered a situation today where I needed to sort an array of objects by a deep property within objects.  Angular makes ordering easy with the `orderBy` filter.
