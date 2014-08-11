@@ -3,11 +3,7 @@ layout: post
 title:  "Concordia Calendar Ninja"
 date:   2014-03-10 16:25:16
 categories: project
-languages: !!seq
-- Ruby
-- Javascript
-- CSS
-technologies: !!seq
+tags: !!seq
 - Ruby
 - Javascript
 - CSS

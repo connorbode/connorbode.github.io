@@ -3,7 +3,7 @@ layout: post
 title:  "angular-repeat-n"
 date:   2014-08-10 19:52:00
 categories: project
-technologies: !!seq
+tags: !!seq
 - AngularJS
 - Gulp
 - NodeJS

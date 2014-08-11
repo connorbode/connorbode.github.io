@@ -3,7 +3,7 @@ layout: post
 title:  "Automatic Language Identification"
 date:   2014-03-01 16:25:16
 categories: project
-technologies: !!seq
+tags: !!seq
 - Java
 - n-grams
 - Naive Bayes Classification

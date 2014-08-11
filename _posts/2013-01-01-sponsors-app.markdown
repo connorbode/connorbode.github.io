@@ -3,7 +3,7 @@ layout: post
 title:  "CAC Sponsors App"
 date:   2013-01-01 16:25:16
 categories: project
-technologies: !!seq
+tags: !!seq
 - Ruby
 - Javascript
 - CSS

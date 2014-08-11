@@ -7,7 +7,7 @@ layout: default
   <h2 class="title">{{ page.title }}</h2>
 
   <div class="badges">
-    {% for tech in page.technologies %}<span class="badge">{{tech}}</span>{% endfor %}
+    {% for tag in page.tags %}<span class="badge">{{tag}}</span>{% endfor %}
   </div>
 
   {{ content }}

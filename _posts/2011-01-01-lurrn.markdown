@@ -3,7 +3,7 @@ layout: post
 title:  "Lurrn"
 date:   2013-01-01 16:25:16
 categories: draft
-technologies: !!seq
+tags: !!seq
 - HTML5 Canvas
 - Javascript
 - CSS
