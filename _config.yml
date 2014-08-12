@@ -1,5 +1,5 @@
 markdown: kramdown
-pygments: true
+highlighter: pygments
 permalink: /:title
 
 logo: http://www.gravatar.com/avatar/010666ce377b6b197a754b8299ff4f14?s=100
