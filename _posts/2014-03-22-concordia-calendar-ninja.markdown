@@ -14,7 +14,7 @@ tags: !!seq
 - AngularJS
 ---
 
-<img src="../public/images/ccn_sketch.jpg" style="height:200px"><img src="../public/images/ccn_v1.png" style="height:200px">
+<img src="../public/images/ccn_sketch.jpg" style="height:200px"><img src="../public/images/ccn_v1.png" style="height:200px"><img src="../public/images/ccn_v2.png" style="height:200px">
 
 This project was inspired by Concordia University's [Software Engineering and Computer Science Society (SCS)](http://scs.ecaconcordia.ca/).  I was working on the project at an SCS hackathon two years ago ([see the repo](https://github.com/SCS-hackers-group/Schedule-To-Calendar)), but there hasn't been any progress on it since.  I needed an idea for a demo project, so I just stole this one!
 
