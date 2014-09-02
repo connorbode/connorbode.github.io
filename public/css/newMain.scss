@@ -1,0 +1,64 @@
+/* =========== 
+ * COLORS
+ * =========== */
+
+$blue: #226666;
+$blue-light: #2D6F6F;
+$blue-lightest: #397979;
+$blue-dark: #185D5D;
+$blue-darkest: #105353;
+
+$red: #AA3939;
+$red-light: #BA4B4B;
+$red-lightest: #CA6060;
+$red-dark: #9A2828;
+$red-darkest: #8A1B1B;
+
+$yellow: #AA8439;
+$yellow-light: #BA954B;
+$yellow-lightest: #CAA660;
+$yellow-dark: #9A7428;
+$yellow-darkest: #8A651B;
+
+$grey-lightest: #efefef;
+$grey-dark: #888888;
+
+
+
+/* ===============
+ * NAV 
+ * =============== */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 38.2%;
+  background-color: $grey-lightest;
+  padding-top: 100px;
+
+  img {
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  h1 { 
+    color: black;
+    font-family: 'Lato';
+    font-size: 40px;
+    text-align: center;
+
+    span.connor {
+      color: $grey-dark;
+      font-weight: 500;
+    }
+  }
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+}
