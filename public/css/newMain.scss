@@ -23,8 +23,23 @@ $yellow-darkest: #8A651B;
 $grey-lightest: #efefef;
 $grey-light: #aaaaaa;
 $grey-dark: #888888;
+$grey-darkest: #444444;
 
 $font-highlight: 'Lato';
+
+
+/* ===============
+ * RESET
+ * =============== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:active, a:hover, a:visited {
+  color: $grey-light;
+  text-decoration: none;
+}
 
 
 
@@ -50,6 +65,7 @@ $font-highlight: 'Lato';
       border-radius: 100px;
       display: block;
       margin: auto;
+      margin-bottom: 15px;
     }
 
     h1 { 
@@ -80,8 +96,26 @@ $font-highlight: 'Lato';
         li {
           display: inline-block;
           margin-right: 15px;
+
+          a {
+            transition: all 1s;
+
+            &:hover {
+              color: black;
+            }
+          }
         }
       }
     }
   }
+}
+
+
+
+/* =================
+ * BODY
+ * ================= */
+
+body {
+  background-color: $grey-darkest;
 }
