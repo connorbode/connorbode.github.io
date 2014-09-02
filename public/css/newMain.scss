@@ -21,7 +21,10 @@ $yellow-dark: #9A7428;
 $yellow-darkest: #8A651B;
 
 $grey-lightest: #efefef;
+$grey-light: #aaaaaa;
 $grey-dark: #888888;
+
+$font-highlight: 'Lato';
 
 
 
@@ -36,29 +39,49 @@ $grey-dark: #888888;
   height: 100%;
   width: 38.2%;
   background-color: $grey-lightest;
-  padding-top: 100px;
+  display: table;
 
-  img {
-    border-radius: 100px;
-    display: block;
-    margin: auto;
-  }
+  div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
 
-  h1 { 
-    color: black;
-    font-family: 'Lato';
-    font-size: 40px;
-    text-align: center;
-
-    span.connor {
-      color: $grey-dark;
-      font-weight: 500;
+    img {
+      border-radius: 100px;
+      display: block;
+      margin: auto;
     }
-  }
 
-  ul {
-    li {
-      display: inline-block;
+    h1 { 
+      color: black;
+      font-family: $font-highlight;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 10px;
+
+      span.connor {
+        color: $grey-dark;
+        font-weight: 500;
+      }
+    }
+
+    div {
+      text-align: center;
+      display: block;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        -webkit-padding-start: 0;
+        -moz-padding-start: 0;
+        font-family: $font-highlight;
+        color: $grey-light;
+
+        li {
+          display: inline-block;
+          margin-right: 15px;
+        }
+      }
     }
   }
 }
