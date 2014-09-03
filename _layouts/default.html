@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    {% include head.html %}
+
+  <head> 
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='/public/css/newMain.css' rel='stylesheet' type='text/css'>
   </head>
+
   <body>
-    <div class="content-container azul">
-      <header class="top row gutters{% if page.title == "Main" %} fadeInLeft animated{% endif %}">
-        <div class="col span_2 center">
-          <!-- TODO: add baseurl to the logo link -->
-          <a href="{{ site.url }}" id="logo" title="{{ site.data.brume.name }}"
-             style="background-image: url('{{site.logo}}');"></a>
+    <div class="navbar">
+      <div> 
+        <img class="gravatar" src="http://www.gravatar.com/avatar/010666ce377b6b197a754b8299ff4f14?s=200;" width="200" height="200"/>
+        <h1>
+          <span class="connor">CONNOR</span>BODE
+        </h1>
+        <div>
+          <ul>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/blog">BLOG</a></li>
+            <li><a href="/projects">PROJECTS</a></li>
+          </ul>
         </div>
-        {% include navigation.html %}
-      </header>
-
-      {{ content }}
-
-      <footer>
-        Built with help from <a href="http://jekyllrb.com">Jekyll</a> and <a href="https://github.com/aigarsdz/brume">this theme</a>
-      </footer>
+      </div>
     </div>
-
-    <!-- scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{site.baseurl}}/public/js/jquery.fitvids.js"></script>
-    <script>
-      $(document).ready(function(){
-        $("article").fitVids();
-      });
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-19253381-2', 'connorbode.me');
-      ga('send', 'pageview');
-
-    </script>
+    <div class="content">
+      {{content}}
+    </div>
   </body>
 </html>
