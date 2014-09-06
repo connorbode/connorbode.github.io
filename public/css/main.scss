@@ -10,7 +10,7 @@ $blue-darkest: #105353;
 
 $red: #AA3939;
 $red-light: #BA4B4B;
-$red-lightest: #CA6060;
+$red-lightest: #B88989;
 $red-dark: #9A2828;
 $red-darkest: #8A1B1B;
 
@@ -21,6 +21,7 @@ $yellow-dark: #9A7428;
 $yellow-darkest: #8A651B;
 
 $grey-lightest: #efefef;
+$grey-lighter: #cccccc;
 $grey-light: #aaaaaa;
 $grey-dark: #888888;
 $grey-darker: #666666;
@@ -195,6 +196,42 @@ div.projects-list {
             max-height: 200px;
           }
         }
+      }
+    }
+  }
+}
+
+/* ==============
+ * PAGE
+ * ============== */
+.page {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  h2 {
+    font-family: $font-highlight;
+    font-size: 40px;
+    color: $grey-light;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: $font-regular;
+    font-weight: 100;
+    color: $grey-lighter;
+    line-height: 25px;
+    margin-bottom: 20px;
+    strong {
+      color: $grey-lightest;
+    }
+    a {
+      transition: all 1s ease;
+      color: #679599;
+      font-weight: 400;
+
+      &:hover {
+        color: #74C2B7;
       }
     }
   }

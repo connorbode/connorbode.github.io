@@ -2,25 +2,12 @@
 <html>
 
   <head> 
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='/public/css/main.css' rel='stylesheet' type='text/css'>
+    {% include head.html %}
   </head>
 
   <body>
     <div class="navbar splash">
-      <div> 
-        <img class="gravatar" src="http://www.gravatar.com/avatar/010666ce377b6b197a754b8299ff4f14?s=200;" width="200" height="200"/>
-        <h1>
-          <span class="connor">CONNOR</span>BODE
-        </h1>
-        <div>
-          <ul>
-            <li><a href="/about">ABOUT</a></li>
-            <li><a href="/blog">BLOG</a></li>
-            <li><a href="/projects">PROJECTS</a></li>
-          </ul>
-        </div>
-      </div>
+      {% include navigation.html %}
     </div>
   </body>
 </html>
