@@ -212,8 +212,8 @@ div.projects-list {
   vertical-align: middle;
   h2 {
     font-family: $font-highlight;
-    font-size: 40px;
-    color: $grey-light;
+    font-size: 80px;
+    color: $grey-darker;
     margin-bottom: 10px;
   }
   p {
@@ -227,11 +227,11 @@ div.projects-list {
     }
     a {
       transition: all 1s ease;
-      color: #679599;
+      color: $grey-lightest;
       font-weight: 400;
 
       &:hover {
-        color: #74C2B7;
+        color: $grey-lightest;
       }
     }
   }
