@@ -1,15 +1,22 @@
 ---
 layout: post
 title:  "Lurrn"
-date:   2013-01-01 16:25:16
-categories: draft
+date:   2011-01-01 16:25:16
+categories: project
 tags: !!seq
-- HTML5 Canvas
 - Javascript
+- jQuery
 - CSS
+- PHP
 - MySQL
 - LaTeX
-- jQuery
+- HTML5 Canvas
 client: A University of Ottawa business student
 ---
-The Canadian Avalanche Association 
+Lurrn was a project I took on around Christmas of 2011.  It was a massive learning experience for me.  Looking back, the amount of work I took on is hilarious.
+
+The idea was to build a full social network for students.  Users had extensive profiles and were able to form friendships.  They were able send messages or chat live with any online friends (similar to Facebook).  Users could join Study Groups, which were centered around a single course at the user's university.  Within a Study Group, a User could upload PDF tests or create multiple choice / text answer tests.  Tests were graded by peer review.  There was also [LaTeX](http://en.wikipedia.org/wiki/LaTeX) support and a drawing feature based on [Canvas](http://en.wikipedia.org/wiki/Canvas_element).
+
+There were a lot of features.  I implemented them all for $2000. 
+
+It was pretty barebones.  There were no frameworks; all the MySQL queries were hardcoded into the PHP files; and the only asynchronous calls were for the chat.  It was __great__ work for $2000, but from any other perspective it was terrible.  However, it was an amazing learning experience for me.
