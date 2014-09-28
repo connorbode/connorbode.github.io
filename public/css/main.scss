@@ -228,6 +228,12 @@ div.projects-list {
     color: $grey-darker;
     margin-bottom: 20px;
     margin-top: 20px;
+
+    time {
+      color: $grey-darker;
+      font-size: 14px;
+      font-family: $font-highlight;
+    }
   }
   p {
     font-family: $font-regular;
