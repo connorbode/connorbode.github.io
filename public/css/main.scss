@@ -189,6 +189,12 @@ div.projects-list {
           padding-left: 40px;
         }
 
+        h3 {
+          font-family: $font-highlight;
+          color: $grey-lightest;
+          margin-bottom: 10px;
+        }
+
         &:hover {
           background-color: $grey-darkerer;
 
@@ -210,6 +216,7 @@ div.projects-list {
   padding-right: 40px;
   display: table-cell;
   vertical-align: middle;
+
   .highlight {
     padding: 30px;
     border-radius: 6px;
@@ -222,6 +229,11 @@ div.projects-list {
       font-size: .7rem;
     }
   }
+
+  .tags {
+    display: none;
+  }
+
   h2 {
     font-family: $font-highlight;
     font-size: 60px;
@@ -235,15 +247,25 @@ div.projects-list {
       font-family: $font-highlight;
     }
   }
+
+  h3 {
+    font-family: $font-highlight;
+    color: $grey-lightest;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
   p {
     font-family: $font-regular;
     font-weight: 100;
     color: $grey-lighter;
     line-height: 25px;
     margin-bottom: 20px;
+
     strong {
       color: $grey-lightest;
     }
+
     a {
       transition: all 1s ease;
       color: $grey-lightest;
