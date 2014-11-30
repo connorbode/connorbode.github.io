@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Automatic Language Identification"
+blurb: "A language identification tool based on Naive Bayes Classification & n-grams"
 date:   2014-03-01 16:25:16
 categories: project
 tags: !!seq

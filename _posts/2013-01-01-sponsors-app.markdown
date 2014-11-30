@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "CAC Sponsors App"
+blurb: "A schedule manager for avalanche forecast sponsors"
 date:   2013-01-01 16:25:16
 categories: project
 tags: !!seq

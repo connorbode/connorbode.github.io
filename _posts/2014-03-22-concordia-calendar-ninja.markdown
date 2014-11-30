@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Concordia Calendar Ninja"
+blurb: "A sneaky way to export a university timetable to Google or Apple calendar"
 date:   2014-03-10 16:25:16
 categories: project
 tags: !!seq

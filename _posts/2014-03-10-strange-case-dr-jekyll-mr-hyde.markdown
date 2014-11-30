@@ -5,7 +5,7 @@ date:   2014-03-10 16:25:16
 categories: blog
 ---
 
-I've been meaning to start up a blog for a while, because it's what [real programmers](http://verybadalloc.com/blog/2014/03/18/i-dont-want-to-be-a-real-programmer/) do!  x\
+I've been meaning to start up a blog for a while, because it's what [real programmers](http://verybadalloc.com/blog/2014/03/18/i-dont-want-to-be-a-real-programmer/) do! 
 
 The blog is powered by [Jekyll](http://jekyllrb.com/) and hosted on Github.  Feel free to view the [blog's source](http://github.com/connorbode/connorbode.github.io).
 

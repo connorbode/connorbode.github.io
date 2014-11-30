@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "angular-repeat-n"
+blurb: "An AngularJS directive for repeating a DOM element n times"
 date:   2014-08-10 19:52:00
 categories: project
 tags: !!seq

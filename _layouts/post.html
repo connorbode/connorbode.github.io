@@ -2,13 +2,17 @@
 layout: default
 ---
 
-<article class="single row gutters">
-  <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }}</time>
-  <h2 class="title">{{ page.title }}</h2>
+<article class="post">
+  <h2>{{ page.title }}
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%A %B %-d, %Y' }}</time>
+  </h2>
+  <ul class="tags">
 
-  <div class="badges">
-    {% for tag in page.tags %}<span class="badge">{{tag}}</span>{% endfor %}
-  </div>
+    {% for tag in page.tags %}
+    <li>{{tag}}</li>
+    {% endfor %}
+
+  </ul>
 
   {{ content }}
 </article>
