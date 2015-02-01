@@ -214,6 +214,7 @@ div.projects-list {
   padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 20px;
   display: table-cell;
   vertical-align: middle;
 
@@ -265,16 +266,31 @@ div.projects-list {
     strong {
       color: $grey-lightest;
     }
+  }    
 
-    a {
-      transition: all 1s ease;
+  a {
+    transition: all 1s ease;
+    color: $grey-lightest;
+    font-weight: 400;
+
+    &:hover {
       color: $grey-lightest;
-      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
 
-      &:hover {
-        color: $grey-lightest;
-        text-decoration: underline;
-      }
+  ul {
+    list-style-position: inside;
+  }
+
+  li {
+    font-family: $font-regular;
+    font-weight: 100;
+    color: $grey-lighter;
+    margin-bottom: 5px;
+
+    &:before {
+      color: $grey-lighter;
     }
   }
 }
