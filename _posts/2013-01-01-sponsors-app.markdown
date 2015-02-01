@@ -18,10 +18,6 @@ demo: /cac-sponsors-api
 client: Canadian Avalanche Centre
 ---
 
-### Demo
-
-- [API](/cac-sponsors-api)
-
 ### Problem
 
 The [Canadian Avalanche Centre](http://www.avalanche.ca/cac/) publishes public avalanche warnings for various Canadian regions.  These forecasts are published daily, and each day has a sponsor.  The management of sponsors was mega-ugly (CSVs and hacky scripts).
