@@ -266,6 +266,12 @@ div.projects-list {
     strong {
       color: $grey-lightest;
     }
+
+    code {
+      background-color: #272822;
+      padding: 5px;
+      border-radius: 5px;
+    }
   }    
 
   a {
