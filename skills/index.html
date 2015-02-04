@@ -23,14 +23,24 @@ title: Projects
     skills[tags[i]] += 1;
   }
 
-  var labels = [];
-  var dataPoints = [];
+  var tuples = [];
 
   for (var key in skills) {
     if (skills.hasOwnProperty(key)) {
-      labels.push(key);
-      dataPoints.push(skills[key]);
+      tuples.push([key, skills[key]]);
     }
+  }
+
+  tuples.sort(function (a, b) {
+    return b[1] - a[1];
+  });
+
+  var labels = [];
+  var dataPoints = [];
+
+  for (i = 0; i < tuples.length; i += 1) {
+    labels.push(tuples[i][0]);
+    dataPoints.push(tuples[i][1]);
   }
 
   var context = document.getElementById('SkillChart').getContext('2d');
