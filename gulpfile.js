@@ -8,7 +8,10 @@ var gulp    = require('gulp'),
     prefix  = require('gulp-autoprefixer');
 
 var paths = {
-  scripts: ['public/js/*.coffee'],
+  scripts: [
+    'public/js/*.coffee',
+    'bower_components/chartjs/Chart.js'
+  ],
   stylesheets: ['public/css/*.scss']
 };
 
