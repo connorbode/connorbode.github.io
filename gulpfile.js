@@ -8,12 +8,18 @@ var gulp    = require('gulp'),
     prefix  = require('gulp-autoprefixer');
 
 var paths = {
-  scripts: [
-    'public/js/*.coffee',
+  scripts: ['public/js/*.coffee'],
+  stylesheets: ['public/css/*.scss'],
+  bower_components: [
     'bower_components/chartjs/Chart.js'
-  ],
-  stylesheets: ['public/css/*.scss']
+  ]
 };
+
+gulp.task('bower_components', function () {
+  gulp.src(paths.bower_components)
+    .pipe(uglify())
+    .pipe(gulp.dest('./public/js'));
+});
 
 gulp.task('scripts', function () {
   gulp.src(paths.scripts)
@@ -36,4 +42,4 @@ gulp.task('watch', function () {
   gulp.watch(paths.stylesheets, ['stylesheets']);
 });
 
-gulp.task('default', ['scripts', 'stylesheets', 'watch']);
+gulp.task('default', ['scripts', 'bower_components', 'stylesheets', 'watch']);
