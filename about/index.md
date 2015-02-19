@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-I'm an [Angular.js](https://angularjs.org/) developer at [Eightysix Labs](http://eightysix.is/) and a computer science student at [Concordia University](http://www.concordia.ca/) in Montreal, QC.  About me pages really irk me, so I'll just answer [some questions](http://www.humorthatworks.com/how-to/50-questions-to-get-to-know-someone/) instead:
+I'm an [Angular.js](https://angularjs.org/) developer at [Eightysix Labs](http://eightysixlabs.com) and a computer science student at [Concordia University](http://www.concordia.ca/) in Montreal, QC.  About me pages really irk me, so I'll just answer [some questions](http://www.humorthatworks.com/how-to/50-questions-to-get-to-know-someone/) instead:
 
 __What sound do you love?__ The silence at the top of a mountain.  [Powder screams](https://www.youtube.com/watch?v=RUuVhiXe33Q#t=0m37s).  [Fast drums](https://www.youtube.com/watch?v=M3f8VUZ5xAU#t=0m05s).
 
