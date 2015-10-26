@@ -138,32 +138,34 @@ a:link, a:active, a:hover, a:visited {
   }
 
   @media (max-width: $width-tablet) {
-    width: 100%;
-    height: 100px;
-
-    div {
-      img {
-        width: 75px;
-        height: 75px;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        margin-left: 15px;
-        margin-right: 10px;
-      }
-
-      h1 {
-        display: inline-block;
-        vertical-align: middle;
-        margin-bottom: 0;
-      }
+    &.not-splash {
+      width: 100%;
+      height: 100px;
 
       div {
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        width: auto;
-        @include transform(translateY(-50%));
+        img {
+          width: 75px;
+          height: 75px;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0;
+          margin-left: 15px;
+          margin-right: 10px;
+        }
+
+        h1 {
+          display: inline-block;
+          vertical-align: middle;
+          margin-bottom: 0;
+        }
+
+        div {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          width: auto;
+          @include transform(translateY(-50%));
+        }
       }
     }
   }
