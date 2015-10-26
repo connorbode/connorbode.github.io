@@ -1,3 +1,22 @@
+
+/* ===========
+ * MIXIN
+ * ========== */
+
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+     -moz-transform: $transforms;
+      -ms-transform: $transforms;
+       -o-transform: $transforms;
+          transform: $transforms;
+}
+
+/* ===========
+ * SIZES
+ * =========== */
+
+$width-tablet: 1025px;
+
 /* =========== 
  * COLORS
  * =========== */
@@ -56,6 +75,7 @@ a:link, a:active, a:hover, a:visited {
 }
 
 .navbar {
+  z-index: 20;
   position: fixed;
   left: 0;
   top: 0;
@@ -116,6 +136,37 @@ a:link, a:active, a:hover, a:visited {
       }
     }
   }
+
+  @media (max-width: $width-tablet) {
+    width: 100%;
+    height: 100px;
+
+    div {
+      img {
+        width: 75px;
+        height: 75px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        margin-left: 15px;
+        margin-right: 10px;
+      }
+
+      h1 {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+      }
+
+      div {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: auto;
+        @include transform(translateY(-50%));
+      }
+    }
+  }
 }
 
 
@@ -140,6 +191,19 @@ div.content {
   top: 0;
   height: 100%;
   display: table;
+
+  .content-layout-spacer {
+    width: 100%;
+    height: 0;
+  }
+
+  @media (max-width: $width-tablet) {
+    width: 100%;
+
+    .content-layout-spacer {
+      height: 100px;
+    }
+  }
 }
 
 

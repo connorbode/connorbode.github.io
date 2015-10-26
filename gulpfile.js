@@ -11,7 +11,8 @@ var paths = {
   scripts: ['public/js/*.coffee'],
   stylesheets: ['public/css/*.scss'],
   bower_components: [
-    'bower_components/chartjs/Chart.js'
+    'bower_components/chartjs/Chart.js',
+    'bower_components/angular/angular.min.js'
   ]
 };
 
