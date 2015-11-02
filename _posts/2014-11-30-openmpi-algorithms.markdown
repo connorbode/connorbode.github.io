@@ -16,8 +16,8 @@ As an introduction to OpenMPI, I implemented a simple program to generate the va
 
 ### Hypercube Quicksort
 
-After becoming comfortable with OpenMPI I implemented a divide-and-conquer quicksort using a hypercube topology, capable of sorting $$n$$ elements on $$p$$ processing units in $$O((n/p) log (n/p))$$ time.  The algorithm requires $$p = 2^d$$ processing units in order to arrange the units in a hypercube.  `d` iterations of compare-and-exchange operations along the $$d$$th hypercube dimension are carried out.  Finally, each processing unit carries out a sequential quicksort and the results are reduced.  [The source code is available on Github](https://github.com/connorbode/hypercube-quicksort).
+After becoming comfortable with OpenMPI I implemented a divide-and-conquer quicksort using a hypercube topology, capable of sorting $$n$$ elements on $$p$$ processing units in $$O\left(\left(\dfrac{n}{p}\right) log \left(\dfrac{n}{p}\right)\right)$$ time.  The algorithm requires $$p = 2^d$$ processing units in order to arrange the units in a hypercube.  $$d$$ iterations of compare-and-exchange operations along the $$d$$th hypercube dimension are carried out.  Finally, each processing unit carries out a sequential quicksort and the results are reduced.  [The source code is available on Github](https://github.com/connorbode/hypercube-quicksort).
 
 ### Floyd-Warshall
 
-The final project I completed involved the [Floyd-Warshall algorithm](http://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm).  Three versions were written: a sequential version; a parallel version using a pipeline for communication; and a parallel version using broadcast communication.  
+The final project I completed involved the [Floyd-Warshall algorithm](http://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm).  Three versions were written: a sequential version; a parallel version using a pipeline for communication; and a parallel version using broadcast communication.  [The source code is available on Github](https://github.com/connorbode/floyd-warshall).
