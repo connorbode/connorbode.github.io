@@ -2,7 +2,7 @@
 layout: post
 title:  "OpenMPI Algorithms"
 date:   2014-11-30 00:00:00
-categories: draft
+categories: project
 tags: !!seq
 - C
 - OpenMPI
