@@ -240,16 +240,6 @@ div.projects-list {
         padding-top: 10px;
         padding-bottom: 10px;
 
-        .blurb {
-          font-family: $font-regular;
-          font-size: 14px;
-          color: $grey-lightest;
-          max-height: 0;
-          overflow: hidden;
-          padding-left: 45px;
-          -webkit-transition: max-height 1s ease;
-        }
-
         .title {
           font-size: 30px;
           padding-left: 40px;
@@ -263,10 +253,6 @@ div.projects-list {
 
         &:hover {
           background-color: $grey-darkerer;
-
-          .blurb {
-            max-height: 200px;
-          }
         }
       }
     }
