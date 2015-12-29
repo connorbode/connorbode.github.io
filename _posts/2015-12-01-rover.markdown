@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Rover"
+date:   2015-12-01 00:00:00
+categories: project
+tags: !!seq
+- C
+---
+
+### Overview
+
+As a final project for an embedded software course, I built a remote controllable rover along with some classmates.
+
+![Rover](/public/images/rover.jpg)
+
+### Functionality
+
+The rover was capable of the following functions:
+
+- Sending a video stream to the remote control stations
+- Receiving movement commands from the remote control station (forward, backward, rotate left, rotate right)
+- Receiving view commands from the remote control station (move video stream view left, move video stream view right)
+
+### Hardware
+
+The rover used the following hardware:
+
+- 1x Beaglebone Black
+- 2x Teensy 2++
+- 4x wheels
+- 1x Servo motor
+- 1x Logitech webcam
+- 1x USB battery
+- 1x USB hub
+- 1x USB WiFi dongle
+
+### Communication
+
+Both Teensy 2++'s were programmed to receive commands over UART.  One controlled the wheels and the other controlled the Servo (swivel for the webcam).
+
+The Beaglebone Black was connected to the two Teensys and to the webcam.  The webcam stream was served via HTTP live streaming using VLC.  A web server was also run on the Beaglebone Black.  A user could use the web server to download a web client which would establish a socket with the web server, then capture and relay keyboard input.  The web server would pass keyboard input to an application running on the Beaglebone, and the appropriate UART commands would be passed to the Teensy's.
+
+A user would connect to the Beaglebone Black using an Ad-Hoc WiFi network.  Once on the same network as the Beaglebone, the webcam stream could be viewed using VLC and the control application could be downloaded using any web browser.
