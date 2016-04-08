@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Unit Testing in C++"
+title:  "Unit Testing in C"
 date:   2014-09-21 00:00:00
 categories: blog
 tags: !!seq
-- C++
+- C
 - testing
 ---
 
-Coming from Javascript and Ruby development, I found it quite difficult to get unit tests running in C++.  This is a short tutorial on how to set up testing.
+Coming from Javascript and Ruby development, I found it quite difficult to get unit tests running in C.  This is a short tutorial on how to set up testing.
 
 
 ### Installing Boost Test
@@ -21,10 +21,10 @@ Coming from Javascript and Ruby development, I found it quite difficult to get u
 
 ### Creating a Test Module
 
-{% highlight cpp %}
+{% highlight c %}
 
 #define BOOST_TEST_MODULE MyTestModule
-#include <boost/test/included/unit_test.hpp>
+#include <boost/test/included/unit_test.h>
 
 BOOST_AUTO_TEST_CASE(myTestCase) {
   BOOST_CHECK(true);
@@ -41,9 +41,9 @@ That's a barebones test module that will compile and run.
 
 ### Simple Example
 
-Take the following C++ header file `useful.hpp`.
+Take the following C++ header file `useful.h`.
 
-{% highlight cpp %}
+{% highlight c %}
 
 #ifndef TEST_H
 #define TEST_H
@@ -56,13 +56,13 @@ int usefulFunction (int val) {
 
 {% endhighlight %}
 
-The function above simply returns any integer you give it.  We can test it with the following file `useful.spec.cpp`:
+The function above simply returns any integer you give it.  We can test it with the following file `useful.spec.c`:
 
-{% highlight cpp %}
+{% highlight c %}
 
 #define BOOST_TEST_MODULE UsefulModule
-#include <boost/test/included/unit_test.hpp>
-#include "useful.hpp"
+#include <boost/test/included/unit_test.h>
+#include "useful.h"
 
 BOOST_AUTO_TEST_CASE(usefulFunctionTest) {
   BOOST_CHECK(usefulFunction(2) == 2);
@@ -73,5 +73,5 @@ BOOST_AUTO_TEST_CASE(usefulFunctionTest) {
 
 To run the tests:
 
-1. Compile using `g++ -o useful.spec.o useful.spec.cpp`
+1. Compile using `g++ -o useful.spec.o useful.spec.c`
 2. Run with `./useful.spec.o`
